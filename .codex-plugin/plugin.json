@@ -1,0 +1,34 @@
+{
+  "name": "handoff",
+  "version": "1.0.0",
+  "description": "Structured handoff and handon workflows for restoring coding context across machines and sessions.",
+  "author": {
+    "name": "kev1nzh37"
+  },
+  "homepage": "https://github.com/kev1nzh37/handoff",
+  "repository": "https://github.com/kev1nzh37/handoff",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skill",
+    "handoff",
+    "context",
+    "agent-workflow"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Handoff",
+    "shortDescription": "Restore coding context between sessions.",
+    "longDescription": "Handoff adds /handoff and /handon workflows that compress current project state into repo-local markdown files, then restore context later without relying on chat history.",
+    "developerName": "kev1nzh37",
+    "category": "Productivity",
+    "capabilities": [
+      "skills"
+    ],
+    "websiteURL": "https://github.com/kev1nzh37/handoff",
+    "defaultPrompt": [
+      "Use $handoff-handon to update the current project handoff.",
+      "Use $handoff-handon to restore context from the last handoff."
+    ]
+  }
+}

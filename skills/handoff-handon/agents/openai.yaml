@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handoff / Handon"
+  short_description: "Restore coding context between sessions"
+  default_prompt: "Use $handoff-handon to create or restore a structured project handoff."
