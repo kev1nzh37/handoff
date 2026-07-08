@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.5 - 2026-07-08
+
+### Changed
+
+- Refined promotion copy to better match Vibe Coding communities and added `docs/HANDOFF/` to `.gitignore`.
+
 ## 1.0.4 - 2026-07-08
 
 ### Added

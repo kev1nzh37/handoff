@@ -32,7 +32,7 @@ Handoff standardizes that handoff.
 
 ## Status
 
-Version: `1.0.4`
+Version: `1.0.5`
 
 This is the first public release. The workflow contract is stable, and the implementation is intentionally small:
 
