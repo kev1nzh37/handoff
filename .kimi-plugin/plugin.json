@@ -1,6 +1,6 @@
 {
   "name": "handoff",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Structured handoff and handon workflows for restoring coding context across machines and sessions.",
   "author": {
     "name": "kev1nzh37"

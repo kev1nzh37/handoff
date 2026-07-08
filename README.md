@@ -11,6 +11,19 @@ It gives coding agents a small workflow pair:
 
 Handoff does not save full chat history. It keeps only the state another session needs to continue the work: the current objective, completed work, unfinished work, risks, key files, next steps, and validation plan.
 
+## How It Works
+
+```text
+Work computer                  Git or file sync                 Home computer
+--------------                 ----------------                 -------------
+/handoff        ->             docs/HANDOFF/       ->           git pull
+git commit/push                CURRENT.md                       /handon
+                               TODO.md                          continue work
+                               DECISIONS.md
+```
+
+No chat transcript sync. No cloud service. Just small repo-local markdown files that any coding agent can read.
+
 ## Why
 
 Agentic coding often breaks down when work moves between a laptop and desktop, or when a long chat is lost. The useful state is usually not the whole conversation. It is a compact project handoff that lives in the repo and can be read by any future session.
@@ -19,7 +32,7 @@ Handoff standardizes that handoff.
 
 ## Status
 
-Version: `1.0.3`
+Version: `1.0.4`
 
 This is the first public release. The workflow contract is stable, and the implementation is intentionally small:
 
@@ -56,6 +69,26 @@ git clone https://github.com/kev1nzh37/handoff.git
 ```
 
 Then point Codex at the cloned plugin folder or install it through your configured local plugin marketplace.
+
+### Codex Marketplace Example
+
+This repository includes an example local marketplace file:
+
+```text
+examples/marketplace.json
+```
+
+You can copy or adapt it for a personal or team marketplace. The important part is that the marketplace entry points at a local checkout of this plugin:
+
+```json
+{
+  "name": "handoff",
+  "source": {
+    "source": "local",
+    "path": "./plugins/handoff"
+  }
+}
+```
 
 Platform-specific notes:
 
@@ -153,6 +186,8 @@ If sensitive material is detected, the handoff should only record an abstract wa
 
 - [`examples/current.md`](examples/current.md): example `docs/HANDOFF/CURRENT.md`
 - [`examples/handon-summary.md`](examples/handon-summary.md): example `/handon` response
+- [`examples/marketplace.json`](examples/marketplace.json): example Codex plugin marketplace entry
+- [`docs/PROMOTION.md`](docs/PROMOTION.md): launch copy for GitHub, X, Hacker News, Reddit, and Chinese communities
 
 ## Plugin Structure
 

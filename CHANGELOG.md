@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.4 - 2026-07-08
+
+### Added
+
+- Promotion copy for GitHub, X, Hacker News, Reddit, and Chinese communities.
+- Example Codex plugin marketplace metadata.
+- README workflow diagrams that explain the cross-machine handoff flow at a glance.
+
 ## 1.0.3 - 2026-07-08
 
 ### Changed
