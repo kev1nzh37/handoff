@@ -3,8 +3,8 @@
 ## Now
 
 - [ ] Resume from home with `/handon`.
-- [ ] Ensure the accepted frog avatar is available locally:
-  - `C:\Users\kev1n\Desktop\handoff-social-assets\wanlitech-walijiang-avatar.png`
+- [ ] Ensure the accepted frog avatar is available after `git pull`:
+  - `assets/social/wanlitech-walijiang-avatar.png`
 - [ ] Reconnect Chrome or another logged-in browser session.
 - [ ] Update X profile avatar, display name, and bio.
 - [ ] Update Reddit profile avatar, display name/profile wording, and bio where available.

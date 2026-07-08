@@ -21,10 +21,10 @@ Continue the public launch/promotion work for Handoff from another machine. The 
 - Published and pushed the public release line through `v1.0.5`.
 - Added and refined the promotion kit in `docs/PROMOTION.md`.
 - Added `docs/HANDOFF/` to `.gitignore` so local handoff state is not committed by default.
-- Generated and accepted a cute frog avatar for WanliTech:
-  - `C:\Users\kev1n\Desktop\handoff-social-assets\wanlitech-walijiang-avatar.png`
-- Created local-only posting assets:
-  - `C:\Users\kev1n\Desktop\handoff-social-assets\posting-kit.md`
+- Generated and accepted a cute frog avatar for WanliTech, now stored in the repo:
+  - `assets/social/wanlitech-walijiang-avatar.png`
+- Created a repo-local posting kit:
+  - `assets/social/posting-kit.md`
 - Confirmed promotion identity:
   - Chinese display name: `蛙里酱`
   - English display name: `Froggo@WanliTech`
@@ -65,8 +65,8 @@ Continue the public launch/promotion work for Handoff from another machine. The 
 - `.gitignore`: includes `docs/HANDOFF/` so this handoff stays local unless the user intentionally syncs it.
 - `README.md` and `README.zh-CN.md`: public product docs.
 - `CHANGELOG.md`: release history through `v1.0.5`.
-- `C:\Users\kev1n\Desktop\handoff-social-assets\wanlitech-walijiang-avatar.png`: accepted social avatar, local-only.
-- `C:\Users\kev1n\Desktop\handoff-social-assets\posting-kit.md`: local-only copy kit, but verify encoding before use.
+- `assets/social/wanlitech-walijiang-avatar.png`: accepted social avatar.
+- `assets/social/posting-kit.md`: repo-local social profile and launch copy kit.
 
 ## Validation Status
 
@@ -97,7 +97,7 @@ Continue the public launch/promotion work for Handoff from another machine. The 
 ## Next Steps
 
 1. On the home machine, run `/handon` in this repository and read this file first.
-2. Confirm whether the accepted avatar file exists on the home machine. If not, copy it from the work machine or regenerate a similar cute frog avatar locally.
+2. Confirm the accepted avatar file exists after `git pull`: `assets/social/wanlitech-walijiang-avatar.png`.
 3. Reconnect Chrome or use another confirmed browser session where X, Reddit, and V2EX are logged in.
 4. Update X profile first, then Reddit profile.
 5. Before clicking final profile save buttons or final post/submit buttons, confirm the exact destination and content with the user.
@@ -112,7 +112,7 @@ Continue the public launch/promotion work for Handoff from another machine. The 
 - Do not publish the local `docs/HANDOFF/` files to the GitHub repo unless the user explicitly decides to sync them.
 - Confirm at action time before saving social profiles, uploading avatar files, or publishing posts.
 - Do not include secrets, cookies, browser session data, or private machine details in any public post.
-- Treat the Chinese copy in `docs/PROMOTION.md` as canonical. The local `posting-kit.md` may display mojibake if read with the wrong encoding.
+- Treat the Chinese copy in `docs/PROMOTION.md` and `assets/social/posting-kit.md` as canonical.
 
 ## Suggested Handon Prompt
 
