@@ -102,6 +102,14 @@ Next:
 我们继续吧。
 ```
 
+## Cross-Machine Note
+
+Use this note only when relevant:
+
+```text
+Handoff writes repo-local files only. To continue on another machine, commit and push `docs/HANDOFF/` or sync those files before running `/handon`.
+```
+
 ## DECISIONS.md
 
 ```md

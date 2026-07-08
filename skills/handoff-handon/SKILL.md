@@ -67,6 +67,8 @@ docs/HANDOFF/CURRENT.md
 
 List additional updated handoff files only if they were actually changed.
 
+If the user says they will continue on another machine, remind them that `/handoff` writes repo-local files only. They must commit and push `docs/HANDOFF/` or otherwise sync those files before running `/handon` elsewhere.
+
 ## Handon Workflow
 
 When restoring context:
@@ -101,6 +103,8 @@ Handon cannot restore the previous project state from handoff.
 ```
 
 You may infer context from README, git log, and TODO only after clearly labeling it as inference.
+
+If the user expected cross-machine continuity, remind them that the previous machine must commit and push `docs/HANDOFF/` or otherwise sync those files before `/handon` can restore context here.
 
 4. If the current branch differs from the branch recorded in `CURRENT.md`, stop and ask for branch confirmation before modifying files.
 5. If local uncommitted changes exist, state that handon will summarize first and will not modify files until confirmed.

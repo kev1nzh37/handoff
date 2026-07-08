@@ -21,7 +21,7 @@ Handoff 就是把这件事标准化。
 
 ## 当前状态
 
-版本：`1.0.2`
+版本：`1.0.3`
 
 这是第一个公开版本。工作流契约已经稳定，实现范围刻意保持很小：
 
@@ -87,6 +87,26 @@ docs/HANDOFF/CURRENT.md
 
 - 当任务列表变化，或发现新的后续工作时，更新 `TODO.md`；
 - 当产生或确认了长期项目决策时，更新 `DECISIONS.md`。
+
+## 跨电脑工作流
+
+Handoff 只写入 repo-local 文件。它不会自动同步 session，也不会自动把文件传到另一台电脑。
+
+如果你想在公司电脑交接、回家继续，推荐流程是：
+
+```bash
+# 公司电脑
+/handoff
+git add docs/HANDOFF
+git commit -m "Update handoff"
+git push
+
+# 家里电脑
+git pull
+/handon
+```
+
+你也可以用其他文件同步工具代替 Git，但下一台电脑必须先拿到 `docs/HANDOFF/`，`/handon` 才能恢复上下文。
 
 当你在新的 session 回来继续工作时输入：
 

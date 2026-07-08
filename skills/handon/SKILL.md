@@ -42,6 +42,8 @@ Handon cannot restore the previous project state from handoff.
 
 You may infer context from README, git log, and TODO only after clearly labeling it as inference.
 
+If the user expected cross-machine continuity, remind them that `/handoff` writes repo-local files only. The previous machine must commit and push `docs/HANDOFF/` or otherwise sync those files before `/handon` can restore context here.
+
 ## Branch Or Local Changes
 
 If the current branch differs from the branch recorded in `CURRENT.md`, stop and ask for confirmation before modifying files.

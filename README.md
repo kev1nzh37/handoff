@@ -19,7 +19,7 @@ Handoff standardizes that handoff.
 
 ## Status
 
-Version: `1.0.2`
+Version: `1.0.3`
 
 This is the first public release. The workflow contract is stable, and the implementation is intentionally small:
 
@@ -85,6 +85,26 @@ docs/HANDOFF/CURRENT.md
 
 - update `TODO.md` when the task list changed or new follow-up work was discovered;
 - update `DECISIONS.md` when a durable project decision was made or confirmed.
+
+## Cross-Machine Workflow
+
+Handoff writes repo-local files only. It does not sync sessions or files between machines.
+
+To continue work on another computer:
+
+```bash
+# Work computer
+/handoff
+git add docs/HANDOFF
+git commit -m "Update handoff"
+git push
+
+# Home computer
+git pull
+/handon
+```
+
+You can use another file sync system instead of Git, but the next machine must receive `docs/HANDOFF/` before `/handon` can restore context.
 
 When returning in a fresh session:
 

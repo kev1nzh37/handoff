@@ -90,3 +90,9 @@ docs/HANDOFF/CURRENT.md
 ```
 
 List `docs/HANDOFF/TODO.md` or `docs/HANDOFF/DECISIONS.md` only if they were actually changed.
+
+If the user says they will continue on another machine, add one short reminder:
+
+```text
+To continue on another machine, commit and push `docs/HANDOFF/` or sync those files first.
+```

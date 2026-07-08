@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3 - 2026-07-08
+
+### Changed
+
+- Documented the cross-machine workflow: `/handoff` writes repo-local files, so users must commit and push `docs/HANDOFF/` or otherwise sync those files before running `/handon` on another computer.
+
 ## 1.0.2 - 2026-07-08
 
 ### Changed
