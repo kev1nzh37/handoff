@@ -19,7 +19,7 @@ Handoff standardizes that handoff.
 
 ## Status
 
-Version: `1.0.0`
+Version: `1.0.1`
 
 This is the first public release. The workflow contract is stable, and the implementation is intentionally small:
 
@@ -75,7 +75,7 @@ In a repository where you are working with Codex:
 /handoff
 ```
 
-Codex inspects the repo and updates:
+Codex should show `handoff` as an enabled skill slash entry. Selecting or sending `/handoff` runs the dedicated handoff skill, which inspects the repo and updates:
 
 ```text
 docs/HANDOFF/CURRENT.md
@@ -92,7 +92,7 @@ When returning in a fresh session:
 /handon
 ```
 
-Codex reads the handoff files, summarizes the current state, and waits for confirmation before modifying code.
+Codex should show `handon` as an enabled skill slash entry. Selecting or sending `/handon` reads the handoff files, summarizes the current state, and waits for confirmation before modifying code.
 
 ## Project Handoff Files
 
@@ -149,6 +149,12 @@ docs/
   README.opencode.md
   README.pi.md
 skills/
+  handoff/
+    SKILL.md
+    agents/openai.yaml
+  handon/
+    SKILL.md
+    agents/openai.yaml
   handoff-handon/
     SKILL.md
     agents/openai.yaml

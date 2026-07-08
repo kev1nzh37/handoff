@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handoff"
+  short_description: "Save current repo state for the next session"
+  default_prompt: "Run /handoff for this repository."

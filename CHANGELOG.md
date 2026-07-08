@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.1 - 2026-07-08
+
+### Added
+
+- Dedicated `handoff` and `handon` skill entry points so Codex can expose `/handoff` and `/handon` as enabled skill slash entries.
+
+### Changed
+
+- Documentation now describes `/handoff` and `/handon` as dedicated skill slash entries instead of relying only on the combined `handoff-handon` skill.
+
 ## 1.0.0 - 2026-07-08
 
 First public release.

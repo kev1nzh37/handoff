@@ -21,7 +21,7 @@ Handoff 就是把这件事标准化。
 
 ## 当前状态
 
-版本：`1.0.0`
+版本：`1.0.1`
 
 这是第一个公开版本。工作流契约已经稳定，实现范围刻意保持很小：
 
@@ -77,7 +77,7 @@ git clone https://github.com/kev1nzh37/handoff.git
 /handoff
 ```
 
-Codex 会检查仓库状态，并更新：
+Codex 应该会把 `handoff` 显示为可用的 skill slash entry。选择或发送 `/handoff` 会运行专门的 handoff skill，检查仓库状态并更新：
 
 ```text
 docs/HANDOFF/CURRENT.md
@@ -94,7 +94,7 @@ docs/HANDOFF/CURRENT.md
 /handon
 ```
 
-Codex 会读取 handoff 文件，总结当前状态，并在你确认前不修改代码。
+Codex 应该会把 `handon` 显示为可用的 skill slash entry。选择或发送 `/handon` 会读取 handoff 文件，总结当前状态，并在你确认前不修改代码。
 
 ## 项目交接文件
 
@@ -151,6 +151,12 @@ docs/
   README.opencode.md
   README.pi.md
 skills/
+  handoff/
+    SKILL.md
+    agents/openai.yaml
+  handon/
+    SKILL.md
+    agents/openai.yaml
   handoff-handon/
     SKILL.md
     agents/openai.yaml

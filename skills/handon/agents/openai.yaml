@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handon"
+  short_description: "Restore repo context from the last handoff"
+  default_prompt: "Run /handon for this repository."

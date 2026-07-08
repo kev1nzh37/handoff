@@ -1,6 +1,6 @@
 # Handoff
 
-Use the Handoff workflow in `skills/handoff-handon/SKILL.md`.
+Use the Handoff workflows in `skills/handoff/SKILL.md`, `skills/handon/SKILL.md`, and `skills/handoff-handon/SKILL.md`.
 
 When the user says `/handoff`, "handoff", "prepare a handoff", or indicates they are ending a work session:
 
