@@ -19,7 +19,7 @@ Handoff standardizes that handoff.
 
 ## Status
 
-Version: `1.0.1`
+Version: `1.0.2`
 
 This is the first public release. The workflow contract is stable, and the implementation is intentionally small:
 
@@ -92,7 +92,7 @@ When returning in a fresh session:
 /handon
 ```
 
-Codex should show `handon` as an enabled skill slash entry. Selecting or sending `/handon` reads the handoff files, summarizes the current state, and waits for confirmation before modifying code.
+Codex should show `handon` as an enabled skill slash entry. Selecting or sending `/handon` reads the handoff files, gives a short context summary, and waits for confirmation before modifying code.
 
 ## Project Handoff Files
 

@@ -11,7 +11,9 @@ This repository contains a Codex plugin that provides the `handoff-handon` skill
 - `.opencode/INSTALL.md`: OpenCode installation entry point.
 - `CLAUDE.md` and `GEMINI.md`: agent-specific instruction entry points.
 - `docs/README.*.md`: platform-specific installation notes.
-- `skills/handoff-handon/SKILL.md`: main skill instructions.
+- `skills/handoff/SKILL.md`: dedicated handoff entry point.
+- `skills/handon/SKILL.md`: dedicated handon entry point.
+- `skills/handoff-handon/SKILL.md`: combined compatibility skill instructions.
 - `skills/handoff-handon/references/templates.md`: reusable handoff and handon templates.
 - `skills/handoff-handon/agents/openai.yaml`: Codex UI metadata for the skill.
 

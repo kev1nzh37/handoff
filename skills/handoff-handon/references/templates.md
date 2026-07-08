@@ -92,41 +92,14 @@ First summarize:
 ## Handon Summary
 
 ```md
-# Handon Summary
+I read the handoff. We are currently [one-sentence objective]. Last time, [one-sentence completed work]. The main remaining point is [one-sentence blocker/risk/next task].
 
-## Current Objective
-
-...
-
-## Last Completed Work
-
-...
-
-## Current Blockers
-
-...
-
-## Key Files
-
-- `path/to/file`: ...
-- `path/to/file`: ...
-
-## Risks
-
-...
-
-## Recommended Next Steps
-
+Next:
 1. ...
 2. ...
 3. ...
 
-## Validation Plan
-
-1. ...
-2. ...
-
-Ready to continue.
+我们继续吧。
 ```
 
 ## DECISIONS.md
@@ -216,5 +189,5 @@ When the user says `/handon`, read:
 
 Do not modify code immediately.
 
-First summarize the current objective, completed work, blockers, key files, risks, next steps, and validation plan.
+First give a concise context recap, the most relevant next steps, and say that we can continue.
 ````

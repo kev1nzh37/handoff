@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 - 2026-07-08
+
+### Changed
+
+- Made `/handon` output shorter: a concise context recap, a few next steps, and a friendly "we can continue" close instead of a full report-style summary.
+
 ## 1.0.1 - 2026-07-08
 
 ### Added

@@ -21,7 +21,7 @@ Handoff 就是把这件事标准化。
 
 ## 当前状态
 
-版本：`1.0.1`
+版本：`1.0.2`
 
 这是第一个公开版本。工作流契约已经稳定，实现范围刻意保持很小：
 
@@ -94,7 +94,7 @@ docs/HANDOFF/CURRENT.md
 /handon
 ```
 
-Codex 应该会把 `handon` 显示为可用的 skill slash entry。选择或发送 `/handon` 会读取 handoff 文件，总结当前状态，并在你确认前不修改代码。
+Codex 应该会把 `handon` 显示为可用的 skill slash entry。选择或发送 `/handon` 会读取 handoff 文件，输出简短上下文概括，并在你确认前不修改代码。
 
 ## 项目交接文件
 

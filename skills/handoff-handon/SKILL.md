@@ -104,7 +104,7 @@ You may infer context from README, git log, and TODO only after clearly labeling
 
 4. If the current branch differs from the branch recorded in `CURRENT.md`, stop and ask for branch confirmation before modifying files.
 5. If local uncommitted changes exist, state that handon will summarize first and will not modify files until confirmed.
-6. Output a `# Handon Summary` using the format in `references/templates.md`.
+6. Output a short handon recap using the concise format in `references/templates.md`.
 7. Do not modify code or project files during the first handon response. Wait until the user explicitly confirms with words such as "start", "continue", "go ahead", or equivalent non-English confirmation phrases.
 
 ## Safety Rules

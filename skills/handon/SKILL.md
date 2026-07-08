@@ -50,43 +50,21 @@ If local uncommitted changes exist, say that local uncommitted changes were dete
 
 ## Response Format
 
-Return:
+Keep the first response brief. Return one compact summary, optional next steps, and a warm continue cue:
 
 ```md
-# Handon Summary
+I read the handoff. We are currently [one-sentence objective]. Last time, [one-sentence completed work]. The main remaining point is [one-sentence blocker/risk/next task].
 
-## Current Objective
-
-...
-
-## Last Completed Work
-
-...
-
-## Current Blockers
-
-...
-
-## Key Files
-
-- `path/to/file`: ...
-
-## Risks
-
-...
-
-## Recommended Next Steps
-
+Next:
 1. ...
 2. ...
 3. ...
 
-## Validation Plan
-
-1. ...
-2. ...
-
 Ready to continue.
 ```
+
+When responding in Chinese, end with the natural equivalent of "we can continue now."
+
+Mention local uncommitted changes in one short sentence when present. Include key file names only when they are necessary for the next action.
 
 Wait for explicit confirmation such as "start", "continue", or "go ahead" before modifying code.
